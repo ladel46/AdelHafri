@@ -16,8 +16,11 @@ module.exports = {
         secondary: ["Major Mono Display"],
       },
       backgroundImage: {
-        Main: "url('https://marketplace.canva.cn/epo1s/MAFME1epo1s/1/wm_tl-1/canva-seamless-monochrome-vector-geometric-pattern.futuristic-seamless-black-vector-texture-from-simple-abstract-shapes.-MAFME1epo1s.png')",
-        "footer-texture": "url('/img/footer-texture.png')",
+        Main: "url('./images/ChatBox.png')",
+        Main2: "url('./images/ChatBoxF.png')",
+      },
+      scale: {
+        "-100": "-1",
       },
     },
   },

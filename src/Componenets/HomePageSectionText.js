@@ -1,7 +1,10 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+
 export default function HomePageSectionText(props) {
   // animation for section text  using framer motion variants
+  const navigate = useNavigate();
 
   const container = {
     hidden: { opacity: 0 },
@@ -53,7 +56,12 @@ export default function HomePageSectionText(props) {
         >
           {props.description}
         </motion.h2>
-        <motion.button variants={item}>
+        <motion.button
+          onClick={() => {
+            navigate(props.path);
+          }}
+          variants={item}
+        >
           <h1 className="font-primary mt-[10px] text-[20px] font-bold underline text-gray-600 hover:text-blueM ">
             see more
           </h1>

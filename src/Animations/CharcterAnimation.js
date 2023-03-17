@@ -37,7 +37,7 @@ export default function CharcterAnimation(props) {
         return (
           <motion.div
             variants={item}
-            className="item  inline-block text-transparent bg-clip-text bg-gradient-to-r  from-pink-500 to-purpleD "
+            className="item  inline-block text-transparent bg-clip-text bg-gradient-to-r  from-pink-400  to-pink-600 "
             key={index}
           >
             {letter}

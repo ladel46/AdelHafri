@@ -3,7 +3,11 @@ import StartButton from "../Componenets/StartButton";
 import HomePageSection from "../Componenets/HomePageSection";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function HomePage() {
+export default function HomePage(props) {
+  React.useEffect(() => {
+    props.setHeader(false);
+    props.setHeaderKey(0);
+  }, []);
   const GreetingText = [
     "About Me",
     "Projects",
@@ -47,7 +51,7 @@ export default function HomePage() {
             }
           }}
           className={`absolute rounded-full  fixed h-[450px] z-30 w-[450px] shadow-md  ${
-            hoverEn && word != "Home" ? "shadow-purpleD" : "shadow-blueM"
+            hoverEn && word != "Home" ? "shadow-pink-700" : "shadow-blueM"
           } bg-blueM`}
         ></motion.div>
         <div
@@ -61,6 +65,7 @@ export default function HomePage() {
         ></div>
         {/* Componenet of the different home page sections */}
         <HomePageSection
+          setHeaderKey={props.setHeaderKey}
           button={button}
           word={word}
           setWord={setWord}

@@ -51,13 +51,13 @@ export default function HomePageSection(props) {
               whileHover={{ scale: 1.05 }}
               className={`${
                 props.hoverEn
-                  ? "flex flex-col relative  bg-gradient-to-b  p-[1px] from-blueM to-purpleD bg-grayL h-[43.3vh] w-[47.3vw] justify-center rounded-[3%] items-center"
+                  ? "flex flex-col relative  bg-gradient-to-b  p-[1px] from-blueM to-pink-600 bg-grayL h-[43.3vh] w-[47.3vw] justify-center rounded-[3%] items-center"
                   : null
               }`}
             >
               <motion.div
                 variants={item}
-                className=" shadow-xl relative  shadow-purpleD flex bg-gradient-to-b from-transparent to-greenM border-[2px] h-[42vh] z-10 border-white w-[46.8vw] rounded-[3%]"
+                className=" shadow-xl relative  shadow-pink-600 flex bg-gradient-to-b from-transparent to-greenM border-[2px] h-[42vh] z-10 border-white w-[46.8vw] rounded-[3%]"
               >
                 <motion.img
                   // placeholder bg image that will be changed after all pages have being made
@@ -74,6 +74,8 @@ export default function HomePageSection(props) {
                   wordPre={"About me"}
                   key1={"s11"}
                   key2={"s12"}
+                  path={"/AboutMe"}
+                  setHeaderKey={props.setHeaderKey}
                   hoverEn={props.hoverEn}
                 ></HomePageSectionText>
               </motion.div>
@@ -88,13 +90,13 @@ export default function HomePageSection(props) {
               whileHover={{ scale: 1.05 }}
               className={`${
                 props.hoverEn
-                  ? "flex flex-col bg-gradient-to-b  p-[1px] from-blueM to-purpleD bg-grayL h-[43.3vh] w-[47.3vw] justify-center rounded-[3%] items-center"
+                  ? "flex flex-col bg-gradient-to-b  p-[1px] from-blueM to-pink-600 bg-grayL h-[43.3vh] w-[47.3vw] justify-center rounded-[3%] items-center"
                   : null
               }`}
             >
               <motion.div
                 variants={item}
-                className="  shadow-xl relative  shadow-purpleD flex bg-gradient-to-b from-transparent to-greenM border-[2px] h-[42vh] z-10 border-white w-[46.8vw] rounded-[3%]"
+                className="  shadow-xl relative  shadow-pink-600 flex bg-gradient-to-b from-transparent to-greenM border-[2px] h-[42vh] z-10 border-white w-[46.8vw] rounded-[3%]"
               >
                 <motion.img
                   src="https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2022/09/Project-section-on-Brittany-Chiang-portfolio-website.png"
@@ -125,13 +127,13 @@ export default function HomePageSection(props) {
               whileHover={{ scale: 1.05 }}
               className={`${
                 props.hoverEn
-                  ? "flex flex-col bg-gradient-to-b  p-[1px] from-blueM to-purpleD bg-grayL h-[43.3vh] w-[47.3vw] justify-center rounded-[3%] items-center"
+                  ? "flex flex-col bg-gradient-to-b  p-[1px] from-blueM to-pink-600 bg-grayL h-[43.3vh] w-[47.3vw] justify-center rounded-[3%] items-center"
                   : null
               }`}
             >
               <motion.div
                 variants={item}
-                className=" shadow-xl relative  z-20 shadow-purpleD flex bg-gradient-to-b from-transparent to-greenM border-[2px] h-[42vh] z-10 border-white w-[46.8vw] rounded-[3%]"
+                className=" shadow-xl relative  z-20 shadow-pink-600 flex bg-gradient-to-b from-transparent to-greenM border-[2px] h-[42vh] z-10 border-white w-[46.8vw] rounded-[3%]"
               >
                 <motion.img
                   src="https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2022/09/Project-section-on-Brittany-Chiang-portfolio-website.png"
@@ -160,13 +162,13 @@ export default function HomePageSection(props) {
               whileHover={{ scale: 1.05 }}
               className={`${
                 props.hoverEn
-                  ? "flex flex-col bg-gradient-to-b  p-[1px] from-blueM to-purpleD bg-grayL h-[43.3vh] w-[47.3vw] justify-center rounded-[3%] items-center"
+                  ? "flex flex-col bg-gradient-to-b  p-[1px] from-blueM to-pink-600 bg-grayL h-[43.3vh] w-[47.3vw] justify-center rounded-[3%] items-center"
                   : null
               }`}
             >
               <motion.div
                 variants={item}
-                className=" shadow-xl relative  shadow-purpleD flex bg-gradient-to-b from-transparent to-greenM border-[2px] h-[42vh] z-10 border-white w-[46.8vw] rounded-[3%]"
+                className=" shadow-xl relative  shadow-pink-600 flex bg-gradient-to-b from-transparent to-greenM border-[2px] h-[42vh] z-10 border-white w-[46.8vw] rounded-[3%]"
               >
                 <motion.img
                   src="https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2022/09/Project-section-on-Brittany-Chiang-portfolio-website.png"

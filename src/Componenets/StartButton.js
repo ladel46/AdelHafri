@@ -54,7 +54,7 @@ export default function StartButton(props) {
             scale: props.button ? 3 : 0,
             transition: { duration: 0.4 },
           }}
-          className="shadow-lg  shadow-purpleD bg-gradient-to-b from-black to-white  absolute border-purpleD border-[2px] rounded-full p-[40px]"
+          className="shadow-lg  shadow-pink-600 bg-gradient-to-b from-black to-white  absolute border-pink-600 border-[2px] rounded-full p-[40px]"
         ></motion.div>
         <AnimatePresence>
           {!props.button ? (
