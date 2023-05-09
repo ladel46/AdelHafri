@@ -23,7 +23,7 @@ export default function MobileMenu() {
         <nav className="  container  text-blueM bg-white  items-center z-[100] text-xxl  drop-shadow-xl md:hidden font-primary font-bold flex flex-col mx-auto   mt-[53px] space-y-2 w-[45vw] ">
           <button
             onClick={() => {
-              navigate("/Home");
+              navigate("/");
             }}
             className={
               "flex flex-col justify-center hover:text-Sbage items-center w-full bg-white hover:bg-greenM hover:text-white h-[40px] text-center  "
@@ -53,6 +53,9 @@ export default function MobileMenu() {
             PROJECTS
           </button>
           <button
+            onClick={() => {
+              navigate("/Studies");
+            }}
             className={
               "flex flex-col justify-center items-center hover:text-Sbage w-full bg-white hover:bg-greenM hover:text-white h-[40px]  text-center "
             }
