@@ -38,7 +38,7 @@ export default function ProjectAdelHafri() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 100, delay: 1.3 }}
-            href="https://ladel46.github.io/Suggest-Me-A-Game/"
+            href="http://adelhafri.com"
             target="_blank"
             rel="noreferrer"
           >
@@ -47,7 +47,7 @@ export default function ProjectAdelHafri() {
             </button>
           </motion.a>
           <motion.a
-            href="https://github.com/ladel46/portfolio-site"
+            href="https://github.com/ladel46/AdelHafri"
             target="_blank"
             rel="noreferrer"
             initial={{ scale: 0 }}
