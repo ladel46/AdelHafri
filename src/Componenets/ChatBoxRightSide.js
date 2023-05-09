@@ -164,7 +164,7 @@ export default function ChatBoxRightSide(props) {
               }}
               transition={{ duration: 0.5, delay: 1.7 }}
               src={Eyes}
-              className="absolute z-20 max-w-[37px] mt-[20px] mb-[52px]"
+              className="absolute z-20 max-w-[35px] mt-[20px] mb-[49px]"
             />
             <motion.img
               initial={{ scaleY: 0 }}
