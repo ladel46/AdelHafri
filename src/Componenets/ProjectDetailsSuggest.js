@@ -9,11 +9,11 @@ import TypingAnimation from "../Animations/TypingAnimation";
 export default function ProjectDetailsSuggest() {
   return (
     <section id="project-details">
-      <div className="flex flex-col w-full items-center  justify-center">
-        <h1 className="font-secondary font-bold text-[100px] text-center  text-transparent  bg-clip-text font-extrabold bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
+      <div className="flex flex-col w-[100vw] lg:w-full items-center  justify-center">
+        <h1 className="font-secondary font-bold text-[30px] sm:text-[35px] md:text-[50px] lg:text-[65px] xlg:text-[70px] xl:text-[100px] text-center  text-transparent  bg-clip-text font-extrabold bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
           <TypingAnimation
             style={
-              "item  inline-block text-transparent W-[100%]   bg-clip-text font-extrabold bg-gradient-to-r from-greenM via-pink-100 to-pink-400 "
+              "item  inline-block text-transparent W-[100%]   bg-clip-text font-extrabold bg-gradient-to-r from-greenM via-pink-400 to-pink-900 "
             }
             duration={0.1}
             stagger={0.1}
@@ -21,7 +21,7 @@ export default function ProjectDetailsSuggest() {
             text={"Suggest Me A Game"}
           ></TypingAnimation>
         </h1>
-        <p className="font-secondary mt-[50px] font-bold text-[20px] text-center text-greenM">
+        <p className="font-secondary mt-[50px] w-[300px] sm:w-[350px] md:w-[700px] lg:w-[880px] xlg:w-[950px] font-bold text-[16px] sm:text-[18px] md:text-[19px] lg:text-[20px] text-center text-greenM">
           <TypingAnimation
             style="item  inline-block text-greenM "
             duration={0.01}
@@ -59,12 +59,12 @@ export default function ProjectDetailsSuggest() {
           </motion.a>
         </div>
 
-        <div className="flex flex-row space-x-[50px] w-full justify-center items-center mt-[90px]">
+        <div className="flex flex-col xlg:flex-row space-y-[15px] scale-[0.8]  sm:scale-[0.9] xlg:scale-[0.85] xl:scale-[1] xlg:space-y-[0px] xlg:space-x-[15px] xl:space-x-[50px] w-full justify-center items-center lg:mt-[90px]">
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 100, delay: 1.3 }}
-            className="flex flex-col  h-[400px] py-[10px] w-[400px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center"
+            className="flex flex-col  xlg:h-[400px] py-[10px] w-[90vw] xlg:w-[400px] rounded-[3%] border-[4px] border-greenM  overflow-y-auto items-center"
           >
             <h2 className="font-secondary font-bold text-transparent text-[30px] bg-clip-text  bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
               built with
@@ -126,7 +126,7 @@ export default function ProjectDetailsSuggest() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 100, delay: 1.5 }}
-            className="flex flex-col  h-[400px] py-[10px] w-[400px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center "
+            className="flex flex-col  xlg:h-[400px] py-[10px] w-[90vw] xlg:w-[400px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center "
           >
             <h2 className="font-secondary font-bold text-transparent text-[24px] bg-clip-text  bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
               The challenge
@@ -137,7 +137,9 @@ export default function ProjectDetailsSuggest() {
                 Making sure it's fully responsive and works for all screen
                 widths
               </li>
-              <li>finding and using a third party that included my needs</li>
+              <li>
+                finding and using a third party API that included my needs
+              </li>
             </ul>
           </motion.div>
 
@@ -145,7 +147,7 @@ export default function ProjectDetailsSuggest() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 100, delay: 1.7 }}
-            className="flex flex-col  h-[400px] py-[10px] w-[400px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center "
+            className="flex flex-col  xlg:h-[400px] py-[10px] w-[90vw] xlg:w-[400px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center "
           >
             <h2 className="font-secondary font-bold text-transparent text-[24px] bg-clip-text  bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
               Continued development
@@ -162,7 +164,7 @@ export default function ProjectDetailsSuggest() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex flex-col overflow-y-auto bg-white mx-auto rounded-[1%] border-[5px] border-greenM mt-[100px] h-[500px] w-[95%]"
+          className="flex flex-col overflow-y-auto bg-white mx-auto rounded-[1%] border-[5px] border-greenM lg:mt-[100px] h-[500px] w-[90vw] xlg:w-[80%] xl:w-[95%]"
         >
           <img src={S1} alt="" />
           <img src={S2} alt="" />
@@ -175,12 +177,12 @@ export default function ProjectDetailsSuggest() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex flex-col  h-[230px] py-[10px] w-[1300px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center mt-[30px]"
+          className="flex flex-col  xlg:h-[230px] py-[5px] lg:py-[10px] w-[90vw] xlg:w-[80%] xl:w-[1300px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center mt-[30px]"
         >
-          <h2 className="font-secondary font-bold text-transparent text-[24px] bg-clip-text  bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
+          <h2 className="font-secondary font-bold text-transparent scale-[0.8] sm:scale-[0.9] lg:scale-[1] text-[24px] bg-clip-text  bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
             What was learned
           </h2>
-          <p className="text-greenM font-primary font-bold text-[23px]  w-[100%] px-[30px]  mt-[10px] ">
+          <p className="text-greenM font-primary font-bold scale-[0.8] sm:scale-[0.9] lg:scale-[1] text-[23px]  w-[100%] text-center lg:text-start lg:px-[30px] -mt-[30px] sm:mt-[0px] lg:mt-[10px] ">
             By doing this project, i improved my skills in using third party
             API's specfically in this case, Rawg Api, which has a large Database
             of videos games with multiple information about each game, also

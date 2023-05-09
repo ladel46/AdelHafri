@@ -15,29 +15,41 @@ export default function HomePage(props) {
     "Conctact me",
     "Home",
   ];
-  const [hoverEn, setHoverEn] = React.useState(false);
-  const [button, setButton] = React.useState(false);
+
   const [word, setWord] = React.useState(GreetingText[0]);
   const [angle, setAngle] = React.useState(130);
+  const [faceX, setFaceX] = React.useState(-3);
+  const [faceY, setFaceY] = React.useState(-3);
+
+  const [eyeX, setEyeX] = React.useState(-11);
+  const [eyeY, setEyeY] = React.useState(-6);
 
   return (
     // Section for the homepage
     <section id="HomePage">
       <div
         className={`${
-          button ? "justify-center" : null
+          props.button ? "justify-center" : null
         } flex flex-col relative  items-center w-full h-full`}
       >
         {/* a circluar indicator that starts the website and indicates different elements */}
         <StartButton
-          setHoverEn={setHoverEn}
+          setHoverEn={props.setHoverEn}
           angle={angle}
           setAngle={setAngle}
           GreetingText={GreetingText}
-          button={button}
+          button={props.button}
           word={word.toUpperCase()}
           setWord={setWord}
-          setButton={setButton}
+          setButton={props.setButton}
+          eyeX={eyeX}
+          setEyeX={setEyeX}
+          eyeY={eyeY}
+          setEyeY={setEyeY}
+          faceX={faceX}
+          faceY={faceY}
+          setFaceX={setFaceX}
+          setFaceY={setFaceY}
         ></StartButton>
         {/* dark circles around the start button  */}
         <motion.div
@@ -45,32 +57,46 @@ export default function HomePage(props) {
             rotate: angle,
           }}
           onMouseEnter={() => {
-            if (hoverEn == true) {
+            if (props.hoverEn == true) {
               setWord("Home");
               setAngle(0);
+              setEyeX(0);
+              setEyeY(0);
+              setFaceX(0);
+              setFaceY(0);
             }
           }}
-          className={`absolute rounded-full  fixed h-[450px] z-30 w-[450px] shadow-md  ${
-            hoverEn && word != "Home" ? "shadow-pink-700" : "shadow-blueM"
+          className={`absolute rounded-full h-[220px] w-[220px] lg:h-[300px] lg:w-[300px] fixed xlg:h-[450px] z-30 xlg:w-[450px] shadow-md  ${
+            props.hoverEn && word != "Home" ? "shadow-pink-600" : "shadow-blueM"
           } bg-blueM`}
         ></motion.div>
         <div
           onMouseEnter={() => {
-            if (hoverEn == true) {
+            if (props.hoverEn == true) {
               setWord("Home");
               setAngle(0);
+              setAngle(0);
+              setEyeX(0);
+              setEyeY(0);
+              setFaceX(0);
+              setFaceY(0);
             }
           }}
-          className="absolute rounded-full  fixed   h-[450px] rotate-180  z-20 w-[450px]  shadow-md  shadow-blueM bg-blueM"
+          className="absolute rounded-full  fixed  h-[220px] w-[220px] lg:h-[300px] lg:w-[300px] xlg:h-[450px] rotate-180  z-20 xlg:w-[450px]  shadow-md  shadow-blueM bg-blueM"
         ></div>
         {/* Componenet of the different home page sections */}
         <HomePageSection
           setHeaderKey={props.setHeaderKey}
-          button={button}
+          button={props.button}
           word={word}
           setWord={setWord}
           setAngle={setAngle}
-          hoverEn={hoverEn}
+          hoverEn={props.hoverEn}
+          setEyeX={setEyeX}
+          setEyeY={setEyeY}
+          setFaceX={setFaceX}
+          setFaceY={setFaceY}
+          animate={props.animate}
         ></HomePageSection>
       </div>
     </section>

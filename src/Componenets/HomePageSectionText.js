@@ -27,7 +27,7 @@ export default function HomePageSectionText(props) {
   const item = {
     hidden: { y: 500 },
     visible: {
-      y: 80,
+      y: 20,
       transition: { type: "spring", stiffness: 100, damping: 20 },
     },
   };
@@ -46,13 +46,13 @@ export default function HomePageSectionText(props) {
       >
         <motion.h1
           variants={item}
-          className="font-primary text-[50px] text-transparent  bg-clip-text font-extrabold bg-gradient-to-r from-blueM to-pink-600"
+          className="font-primary text-[27px] sm:text-[30px] lg:text-[50px] text-transparent text-center bg-clip-text font-extrabold bg-gradient-to-r from-blueM to-pink-600"
         >
           {props.title}
         </motion.h1>
         <motion.h2
           variants={item}
-          className="font-secondary  text-blueM font-bold text-[15px]"
+          className="font-secondary text-center sm:text-[12px] text-bleM font-bold text-[13px] lg:text-[15px]"
         >
           {props.description}
         </motion.h2>
@@ -62,7 +62,7 @@ export default function HomePageSectionText(props) {
           }}
           variants={item}
         >
-          <h1 className="font-primary mt-[10px] text-[20px] font-bold underline text-gray-600 hover:text-blueM ">
+          <h1 className="font-primary mt-[5px] text-[18px] sm:text-[19px] lg:text-[20px] font-bold underline text-gray-300 hover:text-greenM ">
             see more
           </h1>
         </motion.button>

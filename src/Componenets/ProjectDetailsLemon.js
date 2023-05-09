@@ -7,10 +7,10 @@ export default function ProjectDetailsLittleLemon() {
   return (
     <section id="project-details">
       <div className="flex flex-col w-full items-center  justify-center">
-        <h1 className="font-secondary font-bold text-[100px] text-center  text-transparent  bg-clip-text font-extrabold bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
+        <h1 className="font-secondary font-bold text-[30px] sm:text-[35px] md:text-[50px] lg:text-[65px] xlg:text-[70px] xl:text-[100px] text-center  text-transparent  bg-clip-text font-extrabold bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
           <TypingAnimation
             style={
-              "item  inline-block text-transparent  bg-clip-text font-extrabold bg-gradient-to-r from-greenM via-pink-100 to-pink-400 "
+              "item  inline-block text-transparent  bg-clip-text font-extrabold bg-gradient-to-r from-greenM via-pink-400 to-pink-900 "
             }
             duration={0.1}
             stagger={0.1}
@@ -18,14 +18,14 @@ export default function ProjectDetailsLittleLemon() {
             text={"Little Lemon"}
           ></TypingAnimation>
         </h1>
-        <p className="font-secondary mt-[50px] font-bold text-[20px] text-center text-greenM">
+        <p className="font-secondary mt-[50px]  w-[350px] sm:w-[400px] md:w-[700px] lg:w-[950px] xlg:w-[950px] font-bold text-[13.9px] sm:text-[16px] md:text-[20px] lg:text-[19px] text-center text-greenM">
           <TypingAnimation
             style="item  inline-block text-greenM "
             duration={0.01}
             stagger={0.01}
             delay={0}
             text={
-              "a concept website of a resturant named Little Lemon, which includes the home page of the site and the reserving a table page"
+              "a concept website of a resturant named  Little Lemon,including the home page of the site  and the  reserving a table page"
             }
           ></TypingAnimation>
         </p>
@@ -56,15 +56,15 @@ export default function ProjectDetailsLittleLemon() {
           </motion.a>
         </div>
 
-        <div className="flex flex-row space-x-[50px] w-full justify-center items-center mt-[90px]">
+        <div className="flex flex-col xlg:flex-row space-y-[15px] scale-[0.8]  sm:scale-[0.9] xlg:scale-[0.85] xl:scale-[1] xlg:space-y-[0px] xlg:space-x-[15px] xl:space-x-[50px] w-full justify-center items-center lg:mt-[90px]">
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 100, delay: 1.3 }}
-            className="flex flex-col  h-[400px] py-[10px] w-[400px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center"
+            className="flex flex-col  xlg:h-[400px] py-[10px] w-[90vw] xlg:w-[400px] rounded-[3%] border-[4px] border-greenM  overflow-y-auto items-center"
           >
             <h2 className="font-secondary font-bold text-transparent text-[30px] bg-clip-text  bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
-              built with
+              Built with
             </h2>
             <ul className="text-greenM font-primary text-[20px]  w-[100%] font-bold px-[50px] space-y-[15px] mt-[20px] list-disc">
               <li>Semantic HTML5 markup</li>
@@ -146,7 +146,7 @@ export default function ProjectDetailsLittleLemon() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 100, delay: 1.5 }}
-            className="flex flex-col  h-[400px] py-[10px] w-[400px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center "
+            className="flex flex-col  xlg:h-[400px] py-[10px] w-[90vw] xlg:w-[400px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center "
           >
             <h2 className="font-secondary font-bold text-transparent text-[24px] bg-clip-text  bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
               The challenge
@@ -168,7 +168,7 @@ export default function ProjectDetailsLittleLemon() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 100, delay: 1.7 }}
-            className="flex flex-col  h-[400px] py-[10px] w-[400px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center "
+            className="flex flex-col  xlg:h-[400px] py-[10px] w-[90vw] xlg:w-[400px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center "
           >
             <h2 className="font-secondary font-bold text-transparent text-[24px] bg-clip-text  bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
               Continued development
@@ -185,7 +185,7 @@ export default function ProjectDetailsLittleLemon() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex flex-col overflow-y-auto bg-white mx-auto rounded-[1%] border-[5px] border-greenM mt-[50px] h-[500px] w-[95%]"
+          className="flex flex-col overflow-y-auto bg-white mx-auto rounded-[1%] border-[5px] border-greenM lg:mt-[100px] h-[500px] w-[90vw] xlg:w-[80%] xl:w-[95%]"
         >
           <img src={LL0} alt="" />
           <img src={LL1} alt="" />
@@ -196,7 +196,7 @@ export default function ProjectDetailsLittleLemon() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex flex-col  h-[350px] py-[10px] w-[1300px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center mt-[30px]"
+          className="flex flex-col  xlg:h-[230px] py-[5px] lg:py-[10px] w-[90vw] xlg:w-[80%] xl:w-[1300px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center mt-[30px]"
         >
           <h2 className="font-secondary font-bold text-transparent text-[24px] bg-clip-text  bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
             What was learned

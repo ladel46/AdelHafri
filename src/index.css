@@ -4,6 +4,49 @@ body {
   background-color: #021621;
 
 }
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+  position: absolute;
+  left:0px;
+  top:5px;
+  width: 24px;
+  height: 2px;
+  background: black;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle{
+  transform: translateY(7px);
+}
+
+.hamburger-top{
+  transform: translateY(14px);
+}
+
+.open{
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top{
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle{
+  display: none;
+}
+.open .hamburger-bottom{
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
 .Titles{
   text-shadow: 3px 0px 7px #56DBC3;
 }
@@ -21,7 +64,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #d82c51;
+  background: #ee3472;
   border-radius: 10%;
 
 }
