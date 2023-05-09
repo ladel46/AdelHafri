@@ -23,7 +23,7 @@ function App() {
 
       <Routes>
         <Route
-          path="/Home"
+          path="/"
           element={
             <HomePage
               setHeader={setHeader}

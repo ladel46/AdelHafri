@@ -24,7 +24,7 @@ export default function Header(props) {
       >
         <button
           onClick={() => {
-            navigate("/Home");
+            navigate("/");
           }}
         >
           <h1 className="font-primary hidden md:flex font-extrabold text-transparent  bg-clip-text font-extrabold bg-gradient-to-r from-blueM to-pink-600 text-[20px] hover:text-pink-600  ">
