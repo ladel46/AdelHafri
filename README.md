@@ -33,7 +33,7 @@ My own portfolio website that utilizes a varied number of creative ideas per pag
 
 ### Links
 
-- Live Site URL: (https://ladel46.github.io/Suggest-Me-A-Game)
+- Live Site URL: (https://adelhafri.com/)
 
 ## My process
 

@@ -35,18 +35,6 @@ export default function ProjectAdelHafri() {
         </p>
         <div className="flex flex-row w-[100%] justify-center space-x-[50px] mt-[50px]">
           <motion.a
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ type: "spring", stiffness: 100, delay: 1.3 }}
-            href="http://adelhafri.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="bg-greenM rounded-[10%]  py-[10px] w-[110px] text-[20px] font-primary text-blueM font-extrabold hover:bg-pink-600 hover:text-white">
-              Visit <i class="fa-solid fa-link"></i>
-            </button>
-          </motion.a>
-          <motion.a
             href="https://github.com/ladel46/AdelHafri"
             target="_blank"
             rel="noreferrer"
