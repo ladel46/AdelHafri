@@ -49,24 +49,16 @@ export default function LicenseSection() {
   };
 
   return (
-    <div className="relative flex flex-col lg:flex-row w-full items-center justify-center mt-[50px]  text-white">
-      <div className="w-[55%] flex flex-col items-center">
-        <motion.h1
+    <div className="relative flex flex-col lg:flex-row w-full items-center justify-center px-10 lg:px-14 mt-[50px] gap-5  text-white">
+      <div className="w-[100%]  lg:w-[55%] flex flex-col items-center">
+        <motion.h2
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="font-secondary text-[22px] sm:text-[26px] md:text-[28px] lg:text-[25px] xlg:text-[30px] w-[330px] sm:w-[420px] md:w-[700px] lg:w-[400px] xlg:w-[800px] text-center text-transparent "
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
+          className="item  inline-block text-pink-600  w-full  font-extrabold mb-4   bg  font-secondary text-[22px]  text-left "
         >
-          <TypingAnimation
-            style={
-              "item  inline-block text-pink-600 text-center  bg-clip-text font-extrabold bg-gradient-to-r from-greenM  via-pink-400 to-pink-900 "
-            }
-            duration={0.1}
-            stagger={0.1}
-            delay={0.1}
-            text={"License in Electrical Engineering"}
-          ></TypingAnimation>
-        </motion.h1>
+          License in Electrical Engineering
+        </motion.h2>
         <motion.h2
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

@@ -27,7 +27,7 @@ export default function Header(props) {
             navigate("/");
           }}
         >
-          <h1 className="font-primary hidden md:flex font-extrabold text-transparent  bg-clip-text font-extrabold bg-gradient-to-r from-blueM to-pink-600 text-[20px] hover:text-pink-600  ">
+          <h1 className="font-primary hidden md:flex font-extrabold text-transparent  bg-clip-text   bg-gradient-to-r from-blueM to-pink-600 text-[20px] hover:text-pink-600  ">
             HOME
           </h1>
         </button>
@@ -36,7 +36,7 @@ export default function Header(props) {
             navigate("/AboutMe");
           }}
         >
-          <h1 className="font-primary hidden md:flex font-extrabold text-transparent  bg-clip-text font-extrabold bg-gradient-to-r from-blueM to-pink-600 text-[20px] hover:text-pink-600 ">
+          <h1 className="font-primary hidden md:flex font-extrabold text-transparent  bg-clip-text  bg-gradient-to-r from-blueM to-pink-600 text-[20px] hover:text-pink-600 ">
             ABOUT
           </h1>
         </button>
