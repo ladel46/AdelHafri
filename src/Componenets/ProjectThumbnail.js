@@ -8,7 +8,16 @@ export default function ProjectThumbnail(props) {
   const [key, setKey] = React.useState(0);
   return (
     <AnimatePresence>
-      <motion.div
+      <motion.button
+        onClick={() => {
+          props.setPage(props.Page);
+          if (props.width < 980) {
+            props.setDrag(-310);
+            props.setBlur(false);
+            props.setDragged(true);
+            props.setRotate(180);
+          }
+        }}
         onMouseEnter={() => {
           setShowGif(true);
           setKey(2);
@@ -18,35 +27,33 @@ export default function ProjectThumbnail(props) {
           setKey(1);
         }}
         animate={{ scale: 1, height: 130, transition: { duration: 0.4 } }}
-        whileHover={{
-          scale: 1,
+        whileHover={
+          props.Gif
+            ? {
+                scale: 1,
 
-          height: 200,
-          transition: { duration: 0.4 },
-        }}
-        className={`flex   flex-col mx-auto w-[250px] xlg:w-full items-center justify-center  rounded-[4%] overflow-hidden  border-[5px] border-greenM`}
+                height: 200,
+                transition: { duration: 0.4 },
+              }
+            : null
+        }
+        className={`flex hover:border-pink-600  flex-col mx-auto w-[250px] xlg:w-full items-center justify-center cursor-pointer  rounded-[0.5rem] overflow-hidden  border-[5px] border-greenM ${props.className}`}
       >
-        <button
-          onClick={() => {
-            props.setPage(props.Page);
-            if (props.width < 980) {
-              props.setDrag(-310);
-              props.setBlur(false);
-              props.setDragged(true);
-              props.setRotate(180);
-            }
-          }}
-        >
+        <div>
           <img
             src={props.img}
-            className={`${showGif ? "hidden" : null}   rounded-[4%]`}
+            className={`${
+              showGif && props.Gif ? "hidden" : null
+            }   rounded-[4%]`}
           />
           <img
             src={props.Gif}
-            className={`${showGif ? null : "hidden"}  rounded-[4%]`}
+            className={`${
+              showGif && props.Gif ? null : "hidden"
+            }  rounded-[4%]`}
           />
-        </button>
-      </motion.div>
+        </div>
+      </motion.button>
     </AnimatePresence>
   );
 }

@@ -1,34 +1,31 @@
 import React from "react";
-import S1 from "../images/Suggest1.png";
-import S2 from "../images/Suggest2.png";
-import S3 from "../images/Suggest3.png";
-import S4 from "../images/Suggest4.png";
-
+import LL1 from "../../images/LittleLemonReserve.png";
+import LL0 from "../../images/LittleLemonHome.png";
 import { motion, AnimatePresence } from "framer-motion";
-import TypingAnimation from "../Animations/TypingAnimation";
-export default function ProjectDetailsSuggest() {
+import TypingAnimation from "../../Animations/TypingAnimation";
+export default function ProjectDetailsLittleLemon() {
   return (
     <section id="project-details">
-      <div className="flex flex-col w-[100vw] lg:w-full items-center  justify-center">
+      <div className="flex flex-col w-full items-center  justify-center">
         <h1 className="font-secondary font-bold text-[30px] sm:text-[35px] md:text-[50px] lg:text-[65px] xlg:text-[70px] xl:text-[100px] text-center  text-transparent  bg-clip-text font-extrabold bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
           <TypingAnimation
             style={
-              "item  inline-block text-transparent W-[100%]   bg-clip-text font-extrabold bg-gradient-to-r from-greenM via-pink-400 to-pink-900 "
+              "item  inline-block text-transparent  bg-clip-text font-extrabold bg-gradient-to-r from-greenM via-pink-400 to-pink-900 "
             }
             duration={0.1}
             stagger={0.1}
             delay={0.1}
-            text={"Suggest Me A Game"}
+            text={"Little Lemon"}
           ></TypingAnimation>
         </h1>
-        <p className="font-secondary mt-[50px] w-[300px] sm:w-[350px] md:w-[700px] lg:w-[880px] xlg:w-[950px] font-bold text-[16px] sm:text-[18px] md:text-[19px] lg:text-[20px] text-center text-greenM">
+        <p className="font-secondary mt-[50px]  w-[350px] sm:w-[400px] md:w-[700px] lg:w-[950px] xlg:w-[950px] font-bold text-[13.9px] sm:text-[16px] md:text-[20px] lg:text-[19px] text-center text-greenM">
           <TypingAnimation
             style="item  inline-block text-greenM "
             duration={0.01}
             stagger={0.01}
             delay={0}
             text={
-              "A website that suggests a video game to you based on which games you like"
+              "a concept website of a resturant named  Little Lemon,including the home page of the site  and the  reserving a table page"
             }
           ></TypingAnimation>
         </p>
@@ -37,7 +34,7 @@ export default function ProjectDetailsSuggest() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ type: "spring", stiffness: 100, delay: 1.3 }}
-            href="https://ladel46.github.io/Suggest-Me-A-Game/"
+            href="https://ladel46.github.io/Little-Lemon-Concept-Website/"
             target="_blank"
             rel="noreferrer"
           >
@@ -46,7 +43,7 @@ export default function ProjectDetailsSuggest() {
             </button>
           </motion.a>
           <motion.a
-            href="https://github.com/ladel46/Suggest-Me-A-Game"
+            href="https://github.com/ladel46/Little-Lemon-Concept-Website"
             target="_blank"
             rel="noreferrer"
             initial={{ scale: 0 }}
@@ -67,11 +64,12 @@ export default function ProjectDetailsSuggest() {
             className="flex flex-col  xlg:h-[400px] py-[10px] w-[90vw] xlg:w-[400px] rounded-[3%] border-[4px] border-greenM  overflow-y-auto items-center"
           >
             <h2 className="font-secondary font-bold text-transparent text-[30px] bg-clip-text  bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
-              built with
+              Built with
             </h2>
             <ul className="text-greenM font-primary text-[20px]  w-[100%] font-bold px-[50px] space-y-[15px] mt-[20px] list-disc">
               <li>Semantic HTML5 markup</li>
               <li>CSS custom properties</li>
+              <li>Tailwind CSS</li>
               <li>Flexbox</li>
               <li>CSS Grid</li>
               <li>Mobile-first workflow</li>
@@ -88,25 +86,36 @@ export default function ProjectDetailsSuggest() {
               </li>
               <li>
                 <a
-                  href="https://chakra-ui.com"
+                  href="https://tailwindcss.com"
                   target="_blank"
                   rel="noreferrer"
                   className="text-pink-600 font-extrabold hover:text-white"
                 >
-                  ChakraUi
+                  TailwindCss
                 </a>{" "}
-                - Component library
+                - CSS framework
               </li>
               <li>
                 <a
-                  href="https://chakra-ui.com"
+                  href="https://formik.org"
                   target="_blank"
                   rel="noreferrer"
                   className="text-pink-600 font-extrabold hover:text-white"
                 >
-                  Rawg Api
+                  Formik
                 </a>{" "}
-                - Games Datebse
+                - Form library
+              </li>
+              <li>
+                <a
+                  href="https://www.npmjs.com/package/yup/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-pink-600 font-extrabold hover:text-white"
+                >
+                  Yup
+                </a>{" "}
+                - Form validation library
               </li>
               <li>
                 <a
@@ -118,6 +127,17 @@ export default function ProjectDetailsSuggest() {
                   FramerMotion
                 </a>{" "}
                 - Animations
+              </li>
+              <li>
+                <a
+                  href="https://www.figma.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-pink-600 font-extrabold hover:text-white"
+                >
+                  Figma
+                </a>{" "}
+                - Mockup designing
               </li>
             </ul>
           </motion.div>
@@ -132,13 +152,14 @@ export default function ProjectDetailsSuggest() {
               The challenge
             </h2>
             <ul className="text-greenM font-primary text-[20px]  font-bold w-[100%] px-[50px] space-y-[15px] mt-[20px] list-disc">
-              <li>Building a website that is visually appealing</li>
+              <li>Build out the project to the designs provided</li>
               <li>
                 Making sure it's fully responsive and works for all screen
                 widths
               </li>
               <li>
-                finding and using a third party API that included my needs
+                Making sure the reserve a table page and forms inside it comply
+                to Ux/Ui design prenciples
               </li>
             </ul>
           </motion.div>
@@ -155,7 +176,7 @@ export default function ProjectDetailsSuggest() {
             <p className="text-greenM font-primary font-bold text-[23px]  w-[100%] px-[30px]  mt-[20px] ">
               In the future works, im aiming to improve my animation skills to
               make my websites more lively and fun, and also aiming to improve
-              my code clarity, and optizming performance.
+              my code clarity.
             </p>
           </motion.div>
         </div>
@@ -166,10 +187,8 @@ export default function ProjectDetailsSuggest() {
           transition={{ type: "spring", stiffness: 100 }}
           className="flex flex-col overflow-y-auto bg-white mx-auto rounded-[1%] border-[5px] border-greenM lg:mt-[100px] h-[500px] w-[90vw] xlg:w-[80%] xl:w-[95%]"
         >
-          <img src={S1} alt="" />
-          <img src={S2} alt="" />
-          <img src={S3} alt="" />
-          <img src={S4} alt="" />
+          <img src={LL0} alt="" />
+          <img src={LL1} alt="" />
         </motion.div>
 
         <motion.div
@@ -179,16 +198,23 @@ export default function ProjectDetailsSuggest() {
           transition={{ type: "spring", stiffness: 100 }}
           className="flex flex-col  xlg:h-[230px] py-[5px] lg:py-[10px] w-[90vw] xlg:w-[80%] xl:w-[1300px] rounded-[3%] border-[4px] border-greenM overflow-y-auto items-center mt-[30px]"
         >
-          <h2 className="font-secondary font-bold text-transparent scale-[0.8] sm:scale-[0.9] lg:scale-[1] text-[24px] bg-clip-text  bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
+          <h2 className="font-secondary font-bold text-transparent text-[24px] bg-clip-text  bg-gradient-to-r from-greenM via-pink-100 to-pink-400">
             What was learned
           </h2>
-          <p className="text-greenM font-primary font-bold scale-[0.8] sm:scale-[0.9] lg:scale-[1] text-[23px]  w-[100%] text-center lg:text-start lg:px-[30px] -mt-[30px] sm:mt-[0px] lg:mt-[10px] ">
-            By doing this project, i improved my skills in using third party
-            API's specfically in this case, Rawg Api, which has a large Database
-            of videos games with multiple information about each game, also
-            imrpoved my skill in creating animation to imrpove my website, and
-            lastely learned how to display information to the user in an easy to
-            understand manner
+          <p className="text-greenM font-primary font-bold text-[23px]  w-[100%] px-[30px]  mt-[10px] ">
+            By doing this project, i improved my skills in create designs of
+            websites using provided requirements and style guides, and then
+            translating those deisngs that were made by figma into working React
+            application that elevates the experience while taking Ui/Ux deisng
+            prenciples into consideration. It was my first experience with
+            Tailwind css which was pleasent, it made styling elements much
+            faster and more convinent. Also, a peace of my website i would love
+            to highlight is the responsive table that shows when a user selects
+            the number of seats needed, which dynamicly changes depending on
+            user input, and form element that mounts if the table entered is
+            avaible at the time and date selected or not. Lastely, animations
+            where created with Framer Motion which made the process straight
+            forward and simple.
           </p>
         </motion.div>
         <div className="flex flex-row w-[100%] justify-center space-x-[50px] mt-[50px]">
@@ -197,7 +223,7 @@ export default function ProjectDetailsSuggest() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ type: "spring", stiffness: 100 }}
-            href="https://ladel46.github.io/Suggest-Me-A-Game/"
+            href="https://ladel46.github.io/Little-Lemon-Concept-Website/"
             target="_blank"
             rel="noreferrer"
           >
@@ -206,7 +232,7 @@ export default function ProjectDetailsSuggest() {
             </button>
           </motion.a>
           <motion.a
-            href="https://github.com/ladel46/Suggest-Me-A-Game"
+            href="https://github.com/ladel46/Little-Lemon-Concept-Website"
             target="_blank"
             rel="noreferrer"
             initial={{ opacity: 0 }}

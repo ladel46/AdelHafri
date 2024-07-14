@@ -1,12 +1,12 @@
 import React from "react";
-import A1 from "../images/Adel1.png";
-import A2 from "../images/Adel2.png";
-import A3 from "../images/Adel3.png";
-import A4 from "../images/Adel4.png";
-import A5 from "../images/Adel5.png";
+import A1 from "../../images/Adel1.png";
+import A2 from "../../images/Adel2.png";
+import A3 from "../../images/Adel3.png";
+import A4 from "../../images/Adel4.png";
+import A5 from "../../images/Adel5.png";
 
 import { motion, AnimatePresence } from "framer-motion";
-import TypingAnimation from "../Animations/TypingAnimation";
+import TypingAnimation from "../../Animations/TypingAnimation";
 export default function ProjectAdelHafri() {
   return (
     <section id="project-details">
