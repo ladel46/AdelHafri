@@ -11,8 +11,10 @@ import LittleLemonGif from "../images/LittleLemonThumbnail.gif";
 import SuggestGameGif from "../images/SuggestGame.gif";
 import AdelGif from "../images/AdelHafri.gif";
 import MyFundusLogo from "../images/myfundus-logo.svg";
-import NeoStarterProjects from "../Componenets/project-sections/NeoStarterProject";
-import MyFundus from "../Componenets/project-sections/NeoStarterProject";
+import PlaceControlLogo from "../images/placecontrol-logo.png";
+
+import MyFundus from "../Componenets/project-sections/MyFundus";
+import PlaceControl from "../Componenets/project-sections/PlaceControl";
 export default function Projects(props) {
   React.useEffect(() => {
     props.setHeader(true);
@@ -44,6 +46,22 @@ export default function Projects(props) {
     // 👇️ scroll to top on page load
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [page]);
+
+  const activePage = () => {
+    switch (page) {
+      case "Adel":
+        return <ProjectAdelHafri />;
+      case "Suggest":
+        return <ProjectDetailsSuggest />;
+      case "Lemon":
+        return <ProjectDetailsLittleLemon />;
+      case "Myfundus":
+        return <MyFundus />;
+      case "PlaceControl":
+        return <PlaceControl />;
+    }
+  };
+
   return (
     <section id="Projects">
       <div className="flex flex-row w-full relative bg-gradient-to-r from-blueM via-blueM to-pink-900 ">
@@ -134,6 +152,17 @@ export default function Projects(props) {
               setRotate={setRotate}
             />
             <ProjectThumbnail
+              Page={"PlaceControl"}
+              setPage={setPage}
+              img={PlaceControlLogo}
+              setBlur={setBlur}
+              className="!bg-white p-4"
+              setDrag={setDrag}
+              setDragged={setDragged}
+              width={width}
+              setRotate={setRotate}
+            />
+            <ProjectThumbnail
               Page={"Lemon"}
               setPage={setPage}
               img={LittleLemon}
@@ -154,12 +183,7 @@ export default function Projects(props) {
           animate={{ x: 0 }}
           className="flex flex-col  w-[99vw] xlg:w-[72%] xl:w-[77%] relative items-center  p-[30px]   space-y-[20px]  "
         >
-          {page == "Adel" && <ProjectAdelHafri></ProjectAdelHafri>}
-          {page == "Suggest" && <ProjectDetailsSuggest></ProjectDetailsSuggest>}
-          {page == "Lemon" && (
-            <ProjectDetailsLittleLemon></ProjectDetailsLittleLemon>
-          )}
-          {page == "Myfundus" && <MyFundus />}
+          {activePage()}
         </motion.div>
       </div>
     </section>
