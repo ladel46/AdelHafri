@@ -15,7 +15,7 @@ export default function StartButton(props) {
   const GreetingText = [
     "About Me",
     "Projects",
-    "Studies",
+    "Achievements",
     "Conctact me",
     "Home",
   ];
@@ -24,7 +24,7 @@ export default function StartButton(props) {
   const EyeX = [-10, 10, -8, 8, 0];
   const faceX = [-3, 3, -3, 3, 0];
   const faceY = [-3, -3, 3, 3, 0];
-  const [delay, setDelay] = React.useState(0.6);
+  const [delay, setDelay] = React.useState(0.3);
   const EyeY = [-6, -6, 3, 3, 0];
 
   // changing key for rerenders
@@ -48,13 +48,13 @@ export default function StartButton(props) {
       } else {
         props.setHoverEn(true);
       }
-    }, 1600);
+    }, 800);
   }
   function myLoop() {
     setTimeout(function () {
       setShadow(true);
       myLoop1();
-    }, 1000);
+    }, 500);
   }
 
   return (
@@ -69,7 +69,7 @@ export default function StartButton(props) {
         animate={{
           opacity: 1,
           scale: 1,
-          transition: { duration: 0.5 },
+          transition: { duration: 0.25 },
         }}
         whileHover={{
           scale: props.button ? 1 : 1.1,
@@ -83,7 +83,7 @@ export default function StartButton(props) {
           animate={{
             rotate: props.angle,
             scale: props.button ? 3 : 0,
-            transition: { duration: 0.4 },
+            transition: { duration: 0.2 },
           }}
           className={`${
             Shadow ? " sm:shadow-md" : "shadow-xs sm:shadow-xs"
@@ -93,7 +93,10 @@ export default function StartButton(props) {
           {!props.button ? (
             <motion.button
               animate={{ opacity: 1 }}
-              exit={{ opacity: 0.7, transition: { duration: 0.1, delay: 0.5 } }}
+              exit={{
+                opacity: 0.7,
+                transition: { duration: 0.05, delay: 0.25 },
+              }}
               onClick={() => {
                 props.setButton(true);
                 myLoop();
@@ -108,13 +111,13 @@ export default function StartButton(props) {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.25 }}
             className="flex flex-col items-center justify-center   overflow-hidden absolute shadow-pink-600 bg-gradient-to-b border-[2px] from-grayL via-greenM   border-white  rounded-full h-[240px]  w-[240px]"
           >
             <motion.img
               initial={{ y: 200, opacity: 1 }}
               animate={{ y: 20 }}
-              transition={{ type: "spring", stiffness: 70, delay: 0.6 }}
+              transition={{ type: "spring", stiffness: 70, delay: 0.3 }}
               src={RobotHeadless}
               className=" z-0 w-[150px] absolute"
             ></motion.img>
@@ -124,13 +127,13 @@ export default function StartButton(props) {
                 x: props.faceX,
                 y: props.faceY,
                 transition: {
-                  duration: 0.5,
+                  duration: 0.25,
                   delay: 1.7,
-                  x: { delay: 0.6, type: "spring", stiffness: 70 },
-                  y: { delay: 0.6, type: "spring", stiffness: 70 },
+                  x: { delay: 0.3, type: "spring", stiffness: 70 },
+                  y: { delay: 0.3, type: "spring", stiffness: 70 },
                 },
               }}
-              transition={{ type: "spring", stiffness: 70, delay: 0.6 }}
+              transition={{ type: "spring", stiffness: 70, delay: 0.3 }}
               src={RobotHead}
               className=" z-10 w-[110px] mb-[60px] absolute"
             ></motion.img>
@@ -158,14 +161,14 @@ export default function StartButton(props) {
                 x: props.eyeX,
                 y: props.eyeY,
                 transition: {
-                  duration: 0.5,
-                  delay: 1.7,
-                  x: { delay: 0.6, type: "spring", stiffness: 70 },
-                  y: { delay: 0.6, type: "spring", stiffness: 70 },
-                  scaleY: { repeat: Infinity, duration: 0.2, repeatDelay: 4 },
+                  duration: 0.25,
+                  delay: 0.85,
+                  x: { delay: 0.3, type: "spring", stiffness: 70 },
+                  y: { delay: 0.3, type: "spring", stiffness: 70 },
+                  scaleY: { repeat: Infinity, duration: 0.1, repeatDelay: 2 },
                 },
               }}
-              transition={{ duration: 0.5, delay: 1.7 }}
+              transition={{ duration: 0.25, delay: 0.85 }}
               src={Eyes}
               className="absolute z-20 w-[50px] mb-[57px]"
             />
@@ -188,7 +191,7 @@ export default function StartButton(props) {
         // </motion.div>
         null}
         <motion.div
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.15 }}
           animate={{ scale: props.button ? 1 : 0 }}
           className={`${
             props.button ? null : "hidden"

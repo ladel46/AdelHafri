@@ -54,14 +54,14 @@ export default function MobileMenu() {
           </button>
           <button
             onClick={() => {
-              navigate("/Studies");
+              navigate("/Achievements");
             }}
             className={
               "flex flex-col justify-center items-center hover:text-Sbage w-full bg-white hover:bg-greenM hover:text-white h-[40px]  text-center "
             }
           >
             {" "}
-            STUDIES
+            ACHIEVEMENTS
           </button>
           <button
             onClick={() => {

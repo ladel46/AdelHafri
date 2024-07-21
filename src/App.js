@@ -6,7 +6,7 @@ import AboutMePage from "./Pages/AboutMePage";
 import Header from "./Componenets/Header";
 import Projects from "./Pages/ProjectPage";
 import ContactMePage from "./Pages/ContactMePage";
-import Studies from "./Pages/Studies";
+import Achievements from "./Pages/Achievements";
 function App() {
   const [header, setHeader] = React.useState(false);
   const [headerKey, setHeaderKey] = React.useState(0);
@@ -70,9 +70,9 @@ function App() {
           }
         ></Route>
         <Route
-          path="/Studies"
+          path="/Achievements"
           element={
-            <Studies
+            <Achievements
               setHeader={setHeader}
               setHeaderKey={setHeaderKey}
               setAnimate={setAnimate}

@@ -10,7 +10,7 @@ import LicenseAr from "../images/LicenseAr.jpg";
 import LicenseFr from "../images/LicenseFr.jpg";
 import FrontEnd from "../images/FrontEnd.jpg";
 
-export default function Studies(props) {
+export default function Achievements(props) {
   React.useEffect(() => {
     // 👇️ scroll to top on page load
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -189,7 +189,7 @@ export default function Studies(props) {
   const Achievements = [neoStarter, master, license, metaFront];
 
   return (
-    <section id="Studies">
+    <section id="Achievements">
       <div className="fixed bg-gradient-to-r from-blueM via-blueM  to-pink-900 z-0 h-[100vh] w-[100vw] overflow-x-hidden"></div>
 
       <div className="flex flex-col items-center justify-center w-[99.5vw]  text-white overflow-x-hidden py-2">

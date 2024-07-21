@@ -11,7 +11,7 @@ export default function HomePage(props) {
   const GreetingText = [
     "About Me",
     "Projects",
-    "Studies",
+    "Achievements",
     "Conctact me",
     "Home",
   ];

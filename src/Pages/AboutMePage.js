@@ -226,7 +226,7 @@ export default function AboutMePage(props) {
                     "Please explain why you believe we should pick you"
                   );
                   setLinkWord("HERE");
-                  setLink("Studies");
+                  setLink("Achievement");
                 }}
                 className="h-[70px] xlg:h-[40px] flex flex-col justify-center items-center w-[23%] hover:bg-pink-600 hover:text-white bg-white text-[16px] lg:text-[18px] xl:text-[20px] font-bold  rounded-[3%] font-primary text-center"
               >

@@ -15,10 +15,10 @@ export default function HomePageSection(props) {
       scale: 1,
 
       transition: {
-        duration: 1,
-        delay: 2,
-        delayChildren: 2,
-        staggerChildren: 1.8,
+        duration: 0.5,
+        delay: 1,
+        delayChildren: 1,
+        staggerChildren: 0.9,
       },
     },
   };
@@ -137,7 +137,7 @@ export default function HomePageSection(props) {
             <motion.div
               onMouseEnter={() => {
                 if (props.hoverEn == true) {
-                  props.setWord("Studies");
+                  props.setWord("Achievements");
                   props.setAngle(50);
                   props.setEyeX(-8);
                   props.setEyeY(3);
@@ -163,11 +163,11 @@ export default function HomePageSection(props) {
                   whileHover={{ opacity: 0.3 }}
                 />
                 <HomePageSectionText
-                  title={"STUDIES"}
-                  description={"find out the certificates i earned"}
+                  title={"ACHIEVEMENTS"}
+                  description={"find out the different achievements i earned"}
                   word={props.word}
-                  wordPre={"Studies"}
-                  path={"/Studies"}
+                  wordPre={"Achievements"}
+                  path={"/Achievements"}
                   key1={"s31"}
                   key2={"s32"}
                   hoverEn={props.hoverEn}

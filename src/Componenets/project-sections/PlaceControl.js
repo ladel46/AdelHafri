@@ -32,17 +32,15 @@ export default function PlaceControl() {
               text={"Place Control"}
             ></TypingAnimation>
           </h1>
-          <p className="font-secondary  w-[300px] sm:w-[350px] md:w-[700px] lg:w-[880px] xlg:w-[950px] font-bold text-[16px] sm:text-[18px] md:text-[19px] lg:text-[20px] text-center text-greenM">
-            <TypingAnimation
-              style="item  inline-block text-greenM "
-              duration={0.01}
-              stagger={0.01}
-              delay={0}
-              text={
-                "A flexible solution for barrier-free digital parking management that helps you exploit the full potential of your parking space"
-              }
-            ></TypingAnimation>
-          </p>
+          <motion.p
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ type: "spring", stiffness: 100, delay: 0.3 }}
+            className="font-secondary  w-full font-bold text-[16px] sm:text-[18px] md:text-[19px] lg:text-[20px] text-center text-greenM"
+          >
+            A flexible solution for barrier-free digital parking management that
+            helps you exploit the full potential of your parking space
+          </motion.p>
           <div className="flex flex-row w-[100%] justify-center space-x-[50px] ">
             <motion.a
               initial={{ scale: 0 }}
