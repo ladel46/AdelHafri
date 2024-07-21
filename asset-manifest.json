@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.16004587.css",
-    "main.js": "/static/js/main.91c95e44.js",
+    "main.js": "/static/js/main.86cc3510.js",
     "static/media/LittleLemonThumbnail.gif": "/static/media/LittleLemonThumbnail.08dd3b4103365f0f0e13.gif",
     "static/media/AdelHafri.gif": "/static/media/AdelHafri.632466988668cf40608f.gif",
     "static/media/SuggestGame.gif": "/static/media/SuggestGame.9cb32da247acbcd7587e.gif",
@@ -70,10 +70,10 @@
     "static/media/myfundus-logo.svg": "/static/media/myfundus-logo.a4f8d58224a9806908e882ed216bac46.svg",
     "index.html": "/index.html",
     "main.16004587.css.map": "/static/css/main.16004587.css.map",
-    "main.91c95e44.js.map": "/static/js/main.91c95e44.js.map"
+    "main.86cc3510.js.map": "/static/js/main.86cc3510.js.map"
   },
   "entrypoints": [
     "static/css/main.16004587.css",
-    "static/js/main.91c95e44.js"
+    "static/js/main.86cc3510.js"
   ]
 }
